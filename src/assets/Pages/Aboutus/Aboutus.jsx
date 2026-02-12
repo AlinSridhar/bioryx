@@ -6,5 +6,5 @@ export default function Aboutus() {
     <>
         <Navbar></Navbar>
         <About></About>
-    </>)
+    </>);
 }

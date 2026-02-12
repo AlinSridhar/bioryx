@@ -36,6 +36,22 @@
     color: var(--secondary-color);
     transition: 0.3s;
 }
+.cardcontainer{
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cardcontainer>*{
+    flex: 0 0 40%;
+}
+.whatwedo h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
 @media(max-width:480px){
     .tagline{
         font-size: large;

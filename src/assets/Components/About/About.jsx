@@ -1,5 +1,49 @@
+import Aboutcard from '../Aboutcard/Aboutcard';
 import style from './About.module.css'
 export default function About() {
+                const whatwedo = [
+                    {
+                        title: "Academic Support",
+                        description: "Study sessions, revision workshops, shared notes, and discussion forums."
+                    },
+                    {
+                        title: "Scientific Conversations",
+                        description: "Seminars, journal clubs, debates, and guest lectures on emerging topics in biology."
+                    },
+                    {
+                        title: "Events & Outreach",
+                        description: "Talks, exhibitions, competitions, and public science communication initiatives."
+                    },
+                    {
+                        title: "Student Collaboration",
+                        description: "Inter-college networking, project teams, mentorship, and research idea exchanges."
+                    },]
+                    const core =[
+                    {
+                        title: "Scientific Integrity",
+                        description: "We prioritize evidence, transparency, and critical thinking."
+                    },
+                    {
+                        title: "Collaboration",
+                        description: "Progress grows through teamwork and shared perspectives."
+                    },
+                    {
+                        title: "Respect for Life & Nature",
+                        description: "We champion biodiversity, sustainability, and ecological responsibility."
+                    },
+                    {
+                        title: "Lifelong Learning",
+                        description: "Curiosity drives us—inside and outside the classroom."
+                    },
+                    {
+                        title: "Inclusivity",
+                        description: "We welcome students from all biological disciplines and backgrounds."
+                    },
+                    {
+                        title: "Student Leadership",
+                        description: "Bioryx is shaped by initiative, creativity, and collective effort."
+                    }
+                ]
 			  return (
               <>
                     <div className={style.container}>
@@ -36,6 +80,21 @@ export default function About() {
                         </div>
                         <div className={style.whatwedo}>
                             <h1>WHAT WE DO</h1>
+                            <div className={style.cardcontainer}>
+                                {whatwedo.map((whatwedo, index) => (
+                                        <Aboutcard title={whatwedo.title} description={whatwedo.description}></Aboutcard>
+                                ))}
+                                                        
+                            </div>
+                        </div>
+                        <div className={style.whatwedo}>
+                            <h1>CORE VALUES</h1>
+                            <div className={style.cardcontainer}>
+                                {core.map((core, index) => (
+                                        <Aboutcard title={core.title} description={core.description}></Aboutcard>
+                                ))}
+                                                        
+                            </div>
                         </div>
                     </div>
               </>
