@@ -1,0 +1,76 @@
+.biocard{
+    display: flex;
+}
+.biomain{
+    margin:20px;
+}
+.biotext
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.biotext,.biotext2{
+    flex:5;
+}
+.biocard img,.biocard2 img{
+    flex:1;
+    border-radius: 5px;
+    width: 40%;
+    height: auto;
+}
+.biotext p{
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0 10px;
+}
+.biotext h1{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    margin-bottom: 40px;
+}
+.biocard2{
+    display:flex;
+    margin-top: 50px;
+    gap: 10px;
+}
+.biocard2 ul li{
+    font-size: 23px;
+    font-weight: 600;
+}
+.biocard2 p{
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-left: 10px;
+}
+.biobot h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    color: white;
+    padding: 20px;
+}
+.biobot{
+    background-color: rgb(3, 45, 3);
+}
+@media(max-width:480px){
+    .biocard{
+        display: block;
+    }
+    .biomain{
+        margin:10px;
+    }
+    .biocard img{
+        width: 100%;
+    }
+    .biocard2 img{
+        visibility: hidden;
+        width:100%;
+    }
+    .biocard2{
+        display: block;
+    }
+}
