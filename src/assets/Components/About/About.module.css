@@ -57,3 +57,56 @@
     }
     .cardcontainer>*{ flex: 0 0 100%; }
 }
+.mission,.vision{
+    display: flex;
+    margin: 1.3rem 0;
+    flex-wrap: wrap;
+}
+.mission img,.vision img{
+    flex: 1;
+    width:50%;
+    border-radius: 10px;
+}
+.missioncontainer,.visioncontainer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mission h1,.vision h1{
+    margin:1.1rem;
+    letter-spacing: 2px;
+}
+.visioncontainer p{
+    width: 90%;
+    text-align: center;
+    line-height: 2;
+}
+/* .missioncontainer ul li::marker{
+    color: var(--secondary-color);
+} */
+.missioncontainer ul{
+    list-style: none;
+    padding-left: 1.5rem;
+}
+.missioncontainer ul li::before{
+    content:"⭘";
+    color: var(--secondary-color);
+    padding-right: 0.5rem;
+    
+}
+@media(max-width:480px){
+    .mission img,.vision img{
+        width:100%;
+        display: block;
+    }
+    .mission{
+        flex-direction: column-reverse;
+    }
+    .visioncontainer p{
+        width: 100%;
+        text-align: left;
+        line-height: inherit;
+    }
+}

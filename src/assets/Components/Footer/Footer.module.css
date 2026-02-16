@@ -1,0 +1,42 @@
+.info ul li svg{
+    cursor: pointer;
+    color:var(--secondary-color);
+}
+.socialIcons svg:hover{
+    color: #ecf0f1;
+}
+.socialIcons {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #233323;
+    padding: 1.1rem;
+}
+.info ul{
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+}
+.footer h1{
+    color:var(--primary-color);
+    letter-spacing: 2px;
+}
+@media(max-width: 600px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+        text-align: center;
+        padding: 1.1rem 0;
+    }
+}

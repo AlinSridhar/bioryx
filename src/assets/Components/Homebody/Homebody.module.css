@@ -1,8 +1,12 @@
 .biocard{
     display: flex;
 }
-.biomain{
+.biomain {
     margin:20px;
+    color: #233323;
+}
+.biomain *{
+    color: #233323;
 }
 .biotext
 {
@@ -10,6 +14,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: #233323;
 }
 .biotext,.biotext2{
     flex:5;
@@ -49,12 +54,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 0;
+    margin: 100px 0 20px 0px;
     color: white;
     padding: 20px;
 }
 .biobot{
     background-color: rgb(3, 45, 3);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
 }
 @media(max-width:480px){
     .biocard{

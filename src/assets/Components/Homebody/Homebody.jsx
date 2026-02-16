@@ -1,4 +1,6 @@
 import style from './Homebody.module.css'
+import { upcoming } from '../upcomarr'
+import Upcoming from '../Upcoming/Upcoming'
 export default function Homebody() {
     return(
         <>
@@ -23,6 +25,16 @@ export default function Homebody() {
             </div>
             <div className={style.biobot}>
                 <h1>Bioryx - Where biology meets purpose...</h1>
+            </div>
+            <div>
+                <h1>Our Events</h1>
+                <div className={style.cards}>
+                    {upcoming.map((event,index)=>{
+                        return(
+                            <Upcoming key={index} image={event.image} title={event.title} host={event.host} location={event.location} date={event.date} time={event.time} reglink={event.reglink}></Upcoming>
+                        )
+                    })}
+                </div>
             </div>
         </div>
         </>

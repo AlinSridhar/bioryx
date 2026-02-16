@@ -17,9 +17,9 @@ export default function Navbar() {
             </div>
             <div>
                 <ul className={style.navlinks}>
-                    <li  className={style.liitem}><a href="">Home</a></li>
+                    <li  className={style.liitem}><Link to="/">Home</Link></li>
                     <li  className={style.liitem}><Link to="/aboutus">About</Link></li>
-                    <li  className={style.liitem}><a href="">Events</a></li>
+                    <li className={style.liitem}><Link to="/events">Events</Link></li>
                     <li  className={style.liitem}><Link to="/contact">Contact</Link></li>
                     <svg onClick={showsidebar} width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className={style.menuIcon}>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -33,10 +33,10 @@ export default function Navbar() {
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>
 </li>
-                    <li><a href="">Home</a></li>
-                    <li><Link to="/aboutus">About</Link></li>
-                    <li><a href="">Events</a></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li className={style.sideitem}><Link to="/">Home</Link></li>
+                    <li className={style.sideitem}><Link to="/aboutus">About</Link></li>
+                    <li className={style.sideitem}><Link to="/events">Events</Link></li>
+                    <li className={style.sideitem}><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
            </nav>

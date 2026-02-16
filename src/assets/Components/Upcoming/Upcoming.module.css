@@ -1,0 +1,73 @@
+.content p svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+.content p{
+    margin: 0.3rem 0;
+}
+.card{
+    display: flex;
+    color: #233329;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    padding: 1.1rem;
+    width: 400px;
+    margin: 1.2rem 0;
+    background-color: rgba(188, 232, 217,0.4);
+}
+.datetime{
+    background-color: rgba(42, 193, 145, 0.197);
+    width: fit-content;
+    padding: 0.2rem;
+}
+.card:hover{
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    transform: scale(1.005);
+}
+.content{
+   line-height: 1;
+}
+.content h4{
+    margin-bottom: 0.5rem;
+}
+.register{
+    padding: 0.5rem 1.1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 2.7rem;
+    width: 8rem;
+}
+.content a{
+    text-decoration: none;
+}
+.register:hover{
+    border: 2px solid var(--secondary-color);
+    background-color: inherit;
+    color: var(--secondary-color);
+}
+.card img{
+    width: 30%;
+    height: auto;
+    margin-right: 1.1rem;
+    border-radius: 5px;
+}
+@media(max-width:480px){
+    .card{
+        width: 100%;
+    }
+}
+@media(max-width:720px){
+    .card{
+        width: 100%;
+    }
+    .datetime p{
+        font-size: 0.9rem;
+    }
+}

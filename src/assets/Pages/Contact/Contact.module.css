@@ -1,0 +1,38 @@
+.devs{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    color: #223332;
+    margin: 1rem;
+}
+.contact{
+    display: flex;
+    gap:10px;
+}
+.dev{
+    display: flex;
+    color: cornflowerblue;
+}
+.devName::after{
+    content: "||";
+    margin-left: 10px;
+    color: #223332
+}
+.dev p a{
+    text-decoration: none;
+}
+.dev p a:hover{
+    text-decoration: underline;
+    transition: 0.1s ease-in-out;
+    text-underline-offset: 2px;
+}
+@media(max-width: 480px){
+    .devName{
+        border-right: 2px solid #22333249;
+    }
+    .devName::after{
+        content: " ";
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}

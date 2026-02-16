@@ -1,0 +1,15 @@
+.event h1{
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+.events{
+    margin:1.1rem;
+}
+.upcoming{
+    margin: 1.3rem 0;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}

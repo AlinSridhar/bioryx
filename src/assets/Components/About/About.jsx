@@ -33,7 +33,7 @@ export default function About() {
                     },
                     {
                         title: "Lifelong Learning",
-                        description: "Curiosity drives us—inside and outside the classroom."
+                        description: "Curiosity drives us-inside and outside the classroom."
                     },
                     {
                         title: "Inclusivity",
@@ -63,26 +63,32 @@ export default function About() {
                         </div>
                         <div>
                             <div className={style.vision}>
-                                <h1>VISION</h1>
-                                <p>To build a vibrant, inclusive network of young biologists who collaborate across disciplines, pursue scientific excellence, and contribute meaningfully to research, conservation, and environmental stewardship.</p>
+                                <div className={style.visioncontainer}>
+                                    <h1>VISION</h1>
+                                    <p>To build a vibrant, inclusive network of young biologists who collaborate across disciplines, pursue scientific excellence, and contribute meaningfully to research, conservation, and environmental stewardship.</p>
+                                </div>
+                                <img src="https://www.treebo.com/blog/wp-content/uploads/2024/08/History-and-establishment.jpg" alt="" />
                             </div>
                             <div className={style.mission}>
-                                <h1>MISSION</h1>
-                                <ul>
-                                    <li>Create a collaborative platform for learning and dialogue in biological sciences</li>
-                                    <li>Support academic growth through peer-led study groups and shared resources</li>
-                                    <li>Encourage research-oriented thinking and scientific literacy</li>
-                                    <li>Promote awareness of biodiversity, sustainability, and conservation</li>
-                                    <li>Provide opportunities for leadership, outreach, and interdisciplinary exchange</li>
-                                    <li>Connect students who are passionate about shaping the future of biology</li>
-                                </ul>
+                                <img src="https://www.treebo.com/blog/wp-content/uploads/2024/08/Nilgiri-Tahr-1024x675.jpg" alt="" />
+                                <div className={style.missioncontainer}>
+                                    <h1>MISSION</h1>
+                                    <ul>
+                                        <li>Create a collaborative platform for learning and dialogue in biological sciences</li>
+                                        <li>Support academic growth through peer-led study groups and shared resources</li>
+                                        <li>Encourage research-oriented thinking and scientific literacy</li>
+                                        <li>Promote awareness of biodiversity, sustainability, and conservation</li>
+                                        <li>Provide opportunities for leadership, outreach, and interdisciplinary exchange</li>
+                                        <li>Connect students who are passionate about shaping the future of biology</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div className={style.whatwedo}>
                             <h1>WHAT WE DO</h1>
                             <div className={style.cardcontainer}>
                                 {whatwedo.map((whatwedo, index) => (
-                                        <Aboutcard title={whatwedo.title} description={whatwedo.description}></Aboutcard>
+                                        <Aboutcard key={index} title={whatwedo.title} description={whatwedo.description}></Aboutcard>
                                 ))}
                                                         
                             </div>
@@ -91,7 +97,7 @@ export default function About() {
                             <h1>CORE VALUES</h1>
                             <div className={style.cardcontainer}>
                                 {core.map((core, index) => (
-                                        <Aboutcard title={core.title} description={core.description}></Aboutcard>
+                                        <Aboutcard key={index} title={core.title} description={core.description}></Aboutcard>
                                 ))}
                                                         
                             </div>

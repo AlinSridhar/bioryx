@@ -1,10 +1,12 @@
 import About from '../../Components/About/About'
+import Footer from '../../Components/Footer/Footer';
 import Navbar from '../../Components/Navbar/Navbar'
-import style from './Aboutus.module.css'
 export default function Aboutus() {
     return(
     <>
         <Navbar></Navbar>
         <About></About>
+        <Footer/>
+        
     </>);
 }

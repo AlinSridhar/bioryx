@@ -5,7 +5,7 @@ function Corousal() {
   return (
     <Carousel>
       <Carousel.Item>
-        <img className={style.image} src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Lion-tailed_macaque_by_N_A_Nazeer.jpg/1280px-Lion-tailed_macaque_by_N_A_Nazeer.jpg"></img>
+      <img className={style.image} src="https://sustainabletravel.org/wp-content/uploads/Asian-elephants-socializing-1200x675-1.webp"></img>
         {/* <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -21,7 +21,7 @@ function Corousal() {
       </Carousel.Item>
       
       <Carousel.Item>
-        <img className={style.image} src="https://sustainabletravel.org/wp-content/uploads/Asian-elephants-socializing-1200x675-1.webp"></img>
+      <img className={style.image} src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Lion-tailed_macaque_by_N_A_Nazeer.jpg/1280px-Lion-tailed_macaque_by_N_A_Nazeer.jpg"></img>
         {/* <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>
