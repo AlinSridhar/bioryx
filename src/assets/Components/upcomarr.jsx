@@ -1,18 +1,17 @@
 export const upcoming =[
     {
-        title: "Stories of Simplicity to Significance: The Hidden Power of Marine Sponges",
-        host: "Dr. Anita M George - Marine Biologist & Expert in Sponge Taxonomy, Assistant Professor at the University of Kerala",
+        title: "Promoting Firefly Conservation Through Public Awareness and Citizen Science",
+        host: "Dr. Sheik Mohammed Shamsudeen R - Entomologist & Expert in Insect Taxonomy, Associate Professor at Kannur University",
         location: "Google Meet",
-        date: "4 April 2026",
-        time: "7:30 PM - 8:30 PM",
-        reglink:"https://chat.whatsapp.com/IDyoVAj9X0QFfMpI2DTfC8"
+        date: "11 April 2026",
+        time: "7:30 PM - 8:30 PM"
     },
     {
-        title: "BIO-TALK Inauguration & Invasive Alien Species and Their Impact on Biodiversity",
-        host: "Inauguration by Dr. T.V. Sajeev - Chief Scientist, KFRI | Talk by Aleesha Anil - 1st Year B.Sc. Zoology, St. Joseph’s College, Devagiri",
+        title: "The Green Frontier: Botany from Earth to Deep Space",
+        host: "Anagha Jayasooriya - 1st Year B.Sc. Botany, CMS College Kottayam",
         location: "Google Meet",
-        date: "5 April 2026",
-        time: "7:30 PM - 8:30 PM",
-        reglink:"https://chat.whatsapp.com/IDyoVAj9X0QFfMpI2DTfC8"
+        date: "12 April 2026",
+        time: "7:30 PM - 8:30 PM"
     }
+
 ]
